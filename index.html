@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarun | Java Programming Record</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">J</span>
+      <span>Java<span class="brand-light">Lab</span></span>
+    </a>
+    <nav id="topNav">
+      <a href="#home">Home</a>
+      <a href="#profile">Profile</a>
+      <a href="#weeks">Weeks</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">JAVA PROGRAMMING • VIRTUAL RECORD</p>
+          <h1>Build. Compile.<br><span>Learn Java.</span></h1>
+          <p class="hero-text">
+            A personal digital record of Java programming experiments,
+            object-oriented concepts, inheritance, packages and interfaces.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#weeks">Explore Record →</a>
+            <a class="secondary-btn" href="#profile">View Profile</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="code-window">
+            <div class="window-head">
+              <span></span><span></span><span></span>
+              <small>JavaRecord.java</small>
+            </div>
+            <pre><code>public class JavaRecord {
+    public static void main(String[] args) {
+        System.out.println(
+            "Keep learning, keep coding!"
+        );
+    }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="profile-section section">
+      <div class="section-label">01 / PROFILE</div>
+      <div class="profile-card">
+        <div class="profile-image-wrap">
+          <img src="assets/profile.png" alt="Penugonda Tarun" id="profileImage">
+          <div class="image-fallback">PT</div>
+        </div>
+        <div class="profile-info">
+          <p class="eyebrow">STUDENT PROFILE</p>
+          <h2>Penugonda Tarun</h2>
+          <p class="profile-intro">Second-year student exploring Java programming and object-oriented problem solving.</p>
+          <div class="details">
+            <div><span>Roll Number</span><strong>25EU02106</strong></div>
+            <div><span>Year</span><strong>II Year</strong></div>
+            <div><span>Branch</span><strong>AI &amp; ML</strong></div>
+            <div><span>Section</span><strong>B</strong></div>
+            <div><span>Subject</span><strong>Java Programming</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="weeks" class="section weeks-section">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">02 / RECORD</div>
+          <h2>Weekly <span>Work</span></h2>
+        </div>
+        <p>Select a week to open its programs.</p>
+      </div>
+      <div id="weekButtons" class="week-grid"></div>
+    </section>
+
+    <section id="viewer" class="section viewer-section hidden">
+      <button class="back-btn" id="backBtn">← Back to Weeks</button>
+      <div class="week-title-row">
+        <div>
+          <div class="section-label" id="weekLabel">WEEK 1</div>
+          <h2 id="weekTitle">Week Programs</h2>
+        </div>
+        <span class="program-count" id="programCount"></span>
+      </div>
+      <div id="programButtons" class="program-tabs"></div>
+      <article id="programView" class="program-view"></article>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Penugonda Tarun</strong> · 25EU02106</div>
+    <div>Java Programming · AI &amp; ML · B Section</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
